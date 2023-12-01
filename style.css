@@ -1,0 +1,97 @@
+html {
+    scroll-behavior: smooth; /*smooth scrolling to achor tags*/
+}
+
+* {
+    box-sizing: border-box; /* property allows us to include the padding and border in an element's total width and height */
+}
+
+body {
+    margin: 0;
+}
+
+.links {
+    display: flex;
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    padding: 1rem;
+    font-size: 15px;
+    font-family: arial;
+    z-index: 1; /* bring links in front of background */
+  }
+
+  a {
+    color: #fff;
+    margin-right: 18px;
+    padding-top: 26px;
+    padding-left: 15px;
+    text-decoration: none;  /*remove link line*/
+    font-size: 24px;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+
+  h1 {
+    font-family: 'Trocchi', serif;
+    font-size: 50px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+    padding-right: 5px;
+    padding-top: 0;
+  }
+
+.full-height {
+    height: 100vh;
+    border: 1px solid black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+  .description {
+    color: white;
+    font-family: 'Trocchi', serif;
+    font-size: 25px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    position: absolute;
+    bottom: 15%;
+    left:5%
+  }
+
+  .space {
+    background-image: url("space.png");
+  }
+
+  .spaceship {
+    background-image: url("./spaceship.png");
+  }
+
+  .astronaut {
+    background-image: url("./astronaut.png");
+  }
+
+  button {
+    background: transparent;
+    color: white;
+    border: 3px solid white;
+    padding: 5px  20px;
+    border-radius: 5px;
+    font-size: 24px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    transition: transform 0.3s ;
+  }
+  
+  button:hover {
+    cursor: crosshair;
+    transform: scale(1.1);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
